@@ -1,0 +1,509 @@
+.aside
+  width 20.833333333333333%
+  
+  
+.aside__filters
+  padding 0 25px
+  padding-bottom 25px
+  
+  background-color #fffbee
+  
+  box-shadow 0px 0px 15px -2px rgba(0,0,0,0.2)
+  
+.aside__filters-headline
+  padding 35px 0
+  
+.aside__border
+  width 100%
+  height 1px
+  &--fill-gray
+    background-color #dbdbdb
+  &--fill-red
+    background-color #fda07e
+    
+.aside__filters-link-wrap
+  position relative
+  
+  padding 25px 0
+  padding-bottom 30px
+  
+  text-align center
+    
+.aside__filters-link
+  position relative
+  
+  transition all 200ms linear
+  &::after
+    content ''
+
+    position absolute
+    left 0
+    bottom -2px
+
+    width 100%
+    height 1px
+    margin auto
+
+    background-color black
+
+    transition width 200ms linear
+  &:hover
+    color red
+    &::after
+      width 0
+      
+.aside__filters-link-icon
+  position absolute
+  top -5px
+  left 10px
+  bottom 0
+
+  margin auto
+
+  bg($aside-lfilters-link-icon)
+  
+.aside__filters-content
+  padding-left 30px
+  
+.aside__filters-title
+  position relative
+  
+  cursor pointer
+  &--close
+    .aside__filters-title-arrow
+      transform rotate(180deg)
+  
+.aside__filters-title-time-icon
+  width 29px
+  height 32px
+  margin-right 20px
+  .time
+    width 29px
+    height 32px
+    
+    fill #fda07e
+    
+.aside__filters-title-text
+  margin-right 10px
+  
+.aside__filters-title-arrow
+  position relative
+  
+  width 13px
+  height 8px
+  &::before,
+  &::after
+    center-absolute()
+
+    content ''
+
+    box-sizing border-box
+    width 70%
+    height 2px
+
+    background-color black
+  &::before
+    left -5px
+
+    transform rotate(45deg)
+  &::after
+    right -5px
+    
+    transform rotate(-45deg)
+    
+.aside__filters-description-input
+  &:checked + .aside__filters-description-label
+    .aside__filters-checkbox-indicator
+      background-color red
+      
+      border-color red
+      &::before,
+      &::after
+        display block
+    
+.aside__filters-description-label
+  position relative
+  
+  cursor pointer
+  &:hover
+    .aside__filters-checkbox-indicator
+      border-color red
+  
+.aside__filters-checkbox-text
+  padding-left 45px
+    
+.aside__filters-checkbox-indicator
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  
+  box-sizing border-box
+  width 21px
+  height 21px
+  margin auto
+  
+  border 2px solid #d3d3d3
+  border-radius 3px
+  
+  cursor pointer
+  
+  transition 0.2s ease
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    display none
+    height 2px
+    
+    background-color #fffbee
+  &::before
+    top 4px
+    left:-8px
+    
+    width 35%
+    
+    transform rotate(45deg)
+  &::after
+    right -3px
+    
+    width 70%
+    
+    transform rotate(-45deg)
+    
+.aside__filters-title-location-icon
+  width 18px
+  height 26px
+  margin-right 20px
+  .location
+    width 18px
+    height 26px
+    
+    fill #fda07e
+    
+.aside__filters-submit-button
+  box-shadow 0px 6px 15px -9px rgba(0,0,0,0.48)
+  
+.aside__features
+  position relative
+  
+  padding 0 25px
+  padding-bottom 25px
+  
+  background-color white
+  
+  box-shadow 0px 0px 15px -2px rgba(0,0,0,0.2)
+  
+.aside__features-items
+  padding 50px 0
+    
+.aside__features-item-text
+  position relative
+  
+  padding-left 150px
+  &::before
+    content ''
+
+    position absolute
+    top 0
+    left 30px
+    bottom 0
+
+    margin auto
+  &--time
+    &::before
+      bg($aside-features-time)
+  &--map
+    &::before
+      bg($aside-features-map)
+  &--rate
+    &::before
+      bg($aside-features-rate)
+  &--delivery
+    padding-left 137px
+    &::before
+      bg($aside-features-delivery)
+      
+.aside__reviews
+  padding-top 15px
+  
+  background-color white
+  
+.aside__reviews-content
+  padding-top 30px
+  padding-bottom 15px
+  
+  background-color #f2f2f2
+  
+  box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.2)
+  
+.aside__reviews-cart-user-text
+  padding-left 55px
+  
+  font-size 16px
+  line-height 19px
+  color black
+  
+.aside__reviews-content-headline
+  position relative
+  
+  font-size 29px
+  line-height 34px
+  font-weight 400
+  &::before
+    content ''
+    
+    position absolute
+    top 0
+    left -70px
+    bottom 0
+    
+    margin auto
+    
+    bg($aside-reviews-review)
+    
+.aside__reviews-cart
+  box-sizing border-box
+  width 96.3%
+  margin-bottom 15px
+  padding 20px 10px
+  
+  background-color white
+  &:last-child
+    margin-bottom 0
+    
+.aside__reviews-cart-avatar
+  width 42px
+  height 41px
+  
+.aside__reviews-cart-rate-list-items
+  width 12px
+  height 12px
+  margin-right 5px
+  .star
+    display block
+    width 12px
+    height 12px
+    
+    fill #fa7d40
+  &:last-child
+    margin-right 0
+    
+.aside__reviews-cart-likes
+  width 24px
+  height 25px
+  
+  cursor pointer
+  .like
+    width 24px
+    height 25px
+    
+    fill grayMediumLight
+  &--like
+    transform translateY(-6px)
+    &:hover
+      .like
+        fill green
+  &--dislike
+    transform rotate(180deg)
+    &:hover
+      .like
+        fill red
+        
+.aside__reviews-link
+  position relative
+  
+  transition all 200ms linear
+  &::after
+    content ''
+
+    position absolute
+    left 0
+    bottom -2px
+
+    width 100%
+    height 1px
+    margin auto
+
+    background-color black
+
+    transition width 200ms linear
+  &:hover
+    color red
+    &::after
+      width 0
+      
+@media(max-width 1810px)
+  .aside__features-item-text
+    padding-left 100px
+    &--time
+      &::before
+        bg($aside-features-time1810)
+    &--map
+      &::before
+        bg($aside-features-map1810)
+    &--rate
+      &::before
+        bg($aside-features-rate1810)
+    &--delivery
+      &::before
+        bg($aside-features-delivery1810)
+      
+      
+@media(max-width 1700px)
+  .aside__filters-link-icon
+    bg($aside-lfilters-link-icon1700)
+    
+@media(max-width 1590px)
+  .aside__reviews-cart
+    padding 10px 5px
+  
+  .aside__reviews-cart-date-text
+    margin-right 15px
+    
+  .aside__reviews-cart-likes
+    width 20px
+    height 20px
+    .like
+      width 20px
+      height 20px
+      
+@media(max-width 1450px)
+  .aside__filters-headline
+    padding 20px 0
+    
+  .aside__filters-link-wrap
+    padding 15px 0
+    
+  .aside__filters-link-icon
+    top 0
+    left 0
+    
+  .aside__filters-content-headline
+    font-size 15px
+    line-height 18px
+    
+  .aside__filters-content
+    padding-left 0
+    
+  .aside__filters-title-text
+    font-size 14px
+    line-height 17px
+    
+  .aside__filters-submit-button
+    padding-top 10px
+    padding-bottom 10px
+    
+    font-size 15px
+    line-height 18px
+    
+  .aside__features
+    padding-left 10px
+    padding-right 10px
+    padding-bottom 0
+    
+  .aside__features-items
+    padding 25px 0
+    
+  .aside__features-item-text
+    padding-left 80px
+    
+    font-size 14px
+    line-height 17px
+    &::before
+      left 0
+      
+  .aside__reviews-content
+    padding-top 20px
+    
+  .aside__reviews-content-headline
+    font-size 21px
+    margin-bottom 20px
+    
+  .aside__reviews-cart-user-text
+    padding-left 0
+    
+    font-size 14px
+    
+  .aside__reviews-cart-avatar
+    display none
+    
+  .aside__reviews-cart
+    width auto
+    padding-left 20px
+    
+@media(max-width 1199px)
+  .aside
+    position fixed
+    top 137px
+    bottom 0
+    z-index 30
+
+    overflow-y scroll
+    margin auto
+    
+    &--close
+      visibility hidden
+      .aside__content
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        -webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        
+        transform translateX(-100px)
+    &--open
+      box-sizing border-box
+      width 100%
+      
+      transform translateX(0)
+      .aside__content
+        width 287px
+        
+  .aside__content
+    transform translateX(0)
+    
+    transition all 0.2s ease
+    
+  .aside__filters-headline
+    font-size 15px
+    line-height 19px
+  
+  .aside__filters-link
+    font-size 12px
+    line-height 15px
+    
+  .aside__filters-checkbox-text
+    font-size 12px
+    line-height 15px
+    
+@media(max-width 1080px)
+  .aside
+    top 136px
+    
+@media(max-width 1005px)
+  .aside
+    top 135px
+    
+@media(max-width 920px)
+  .aside
+    top 134px
+    
+@media(max-width 890px)
+  .aside
+    top 70px
+    
+    width 295px
+    
+@media(max-width 580px)
+  .aside
+    display none
+    

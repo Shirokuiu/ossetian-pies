@@ -9,13 +9,795 @@ html(class="no-js", lang="ru")
     .wrapper
       .content
         header.page-header
+          .page-header__row-top
+            .container.row.row--jc-sb.row--ai-c
+              button.hamburger.hamburger--spin(type="button")
+                span.hamburger-box
+                  span.hamburger-inner
+              .logo.logo--header
+                a.logo__link.row.row--ai-c.text--td-none(href="index.html")
+                  .logo__img-wrap.m--r25
+                    img(src="%=static=%img/content/logo.png" alt="Осетинские пироги от Виктории")
+                  .b
+                    p.logo__slogan-text.text.text--white.text.m--b5.text--fs-1_41vw Осетинские пироги
+                    p.logo__text-author.text.text--white С любовью от Виктории
+              nav.page-header__nav-wrap.grow
+                ul.nav--description.list.row.row--jc-sb
+                  li.nav__items
+                    a.nav__link.nav__link--company.d-block.text--white.text--td-none(href="#") О компании
+                  li.nav__items
+                    a.nav__link.nav__link--pay.d-block.text--white.text--td-none(href="#") Оплата
+                  li.nav__items
+                    a.nav__link.nav__link--delivery.d-block.text--white.text--td-none(href="#") Доставка
+                  li.nav__items
+                    a.nav__link.nav__link--actions.d-block.text--white.text--td-none(href="#") Акции
+                  li.nav__items
+                    a.nav__link.nav__link--reviews.d-block.text--white.text--td-none(href="#") Отзывы
+                  li.nav__items
+                    a.nav__link.nav__link--contacts.d-block.text--white.text--td-none(href="#") Контакты
+              .user-block.user-block--header.row
+                a.user-block__basket.row.row--jc-c.row--ai-c.b--w80.m--r15(href="#")
+                  span.user-block__basket-indicator.d-block 10
+                  span.user-block__basket-icon
+                .b
+                  p.user-block__work-time.text.text--white16.m--b10.p--l10 Время работы пекарни: с 9:00 до 21:00
+                  .row.row--ai-c
+                    span.user-block__phone-icon.m--r15
+                      != pugHelpers.Icon.call(locals, {iconName: 'phone', className: 'phone'})
+                    a.user-block__work-tel.text.text--white.text--fw700.text--fs-1_51vw(href="tel:+7952007580") +7 (495) 200-75-80
+          .page-header__row-bottom.page-header__row-bottom--close
+            .container
+              ul.nav--navigation.list.row.row--jc-sb
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С мясом
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С курицей
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С рыбой
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С сыром
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С капустой
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С картошкой
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С грибами
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С луком
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С перцем
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С сладкие
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С постные
+                li.nav__items
+                  a.nav__link.d-block.text--blue.text--td-none.text--uppercase.text--fw700(href="#") С традиционные
+                  
         main.page-content
+        
+          .user-block.user-block--fixed
+            ul.user-block__fixed-list.list.row.row--jc-sb.row--ai-c
+              li.user-block__fixed-basket-list-item
+                a.user-block__fixed-basket.row.row--ai-c.text--td-none(href="#")
+                  .user-block__fixed-basket-result-left-wrap.row.row--ai-c.m--r30
+                    span.user-block__fixed-basket-basket-icon.d-block.m--r15
+                    p.user-block__fixed-basket-result.text
+                      span.user-block__fixed-basket-result-span 12
+                      | товаров
+                  .b.row.row--ai-c
+                    span.user-block__fixed-basket-purse-icon.d-block.m--r15
+                      != pugHelpers.Icon.call(locals, {iconName: 'purse', className: 'purse'})
+                    p.user-block__fixed-basket-result.text
+                      span.user-block__fixed-basket-result-span 5 200
+                      | руб.
+              li.user-block__fixed-list-work-time.row.row--ai-c
+                span.user-block__fixed-basket-time-icon.d-block.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'time', className: 'time'})
+                p.user-block__fixed-basket-time-text.text Время работы пекарни:
+                  br
+                  | с 9:00 до 21:00
+              li.user-block__fixed-list-favorite.row.row--ai-c
+                span.user-block__fixed-basket-favorite-icon.d-block.m--r15
+                  != pugHelpers.Icon.call(locals, {iconName: 'star-no-fill', className: 'star-no-fill'})
+                a.user-block__fixed-basket-favorite-link.text--td-none(href="#") Добавить сайт в избранное
+              li.user-block__fixed-list-socials.row.row--ai-c
+                p.user-block__fixed-socials-text.text.text--black16.m--r15 Поделиться в соцсетях:
+                ul.list.row
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--vk.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--fb.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--od.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--g.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--tw.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--v.d-block(href="#")
+                  li.list--items-mr5
+                    a.user-block__fixed-basket-socials.user-block__fixed-basket-socials--wa.d-block(href="#")
+              li.user-block__fixed-list-tel
+                a.user-block__fixed-basket-tel.text--td-none(href="tel:+74952007580") +7 (495) 200-75-80
+          
+          .row
+            aside.aside.aside--close
+              .aside__content
+                form.aside__filters(action="action.php" method="post")
+                  h2.aside__filters-headline.text.text--red.text--uppercase.text--center.text--fs-1_25vw Подбор по параметрам:
+                  .aside__border.aside__border--fill-gray
+                  .aside__filters-link-wrap
+                    span.aside__filters-link-icon.d-block
+                    a.aside__filters-link.text.text--td-none.text--center.text--fw700(href="#") Найти пекарню по метро
+                  .aside__border.aside__border--fill-gray.m--b15
+                  .aside__filters-wrap.m--b25
+                    .aside__filters-content.m--b20
+                      h2.aside__filters-content-headline.text.text--black.text--fw700.m--b20 Основные фильтры:
+                      .aside__filters-title.row.row--ai-c.m--b20
+                        span.aside__filters-title-time-icon.d-block
+                          != pugHelpers.Icon.call(locals, {iconName: 'time', className: 'time'})
+                        h2.aside__filters-title-text.text.text--black.text--fw700 Режим работы
+                        span.aside__filters-title-arrow.d-block
+                      ul.aside__filters-description.list
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox" checked)#checkbox1
+                          label.aside__filters-description-label.d-block(for="checkbox1")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium с 09:00
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox2
+                          label.aside__filters-description-label.d-block(for="checkbox2")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium После 18.00
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox3
+                          label.aside__filters-description-label.d-block(for="checkbox3")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium После 20.00
+                    .aside__border.aside__border--fill-gray.m--b15
+                    .aside__filters-content
+                      .aside__filters-title.row.row--ai-c.m--b20
+                        span.aside__filters-title-location-icon.d-block
+                          != pugHelpers.Icon.call(locals, {iconName: 'location', className: 'location'})
+                        h2.aside__filters-title-text.text.text--black.text--fw700 По расположению
+                        span.aside__filters-title-arrow.d-block
+                      ul.aside__filters-description.list
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox4
+                          label.aside__filters-description-label.d-block(for="checkbox4")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium Внутри садового кольца
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox5
+                          label.aside__filters-description-label.d-block(for="checkbox5")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium Внутри третьего кольца
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox6
+                          label.aside__filters-description-label.d-block(for="checkbox6")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium В пределах МКАД
+                        li.list--items-mb20
+                          input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkbox")#checkbox7
+                          label.aside__filters-description-label.d-block(for="checkbox7")
+                            span.aside__filters-checkbox-indicator.d-block
+                            p.aside__filters-checkbox-text.text.text--grayMedium Ближайшие к моему метро
+                  .row
+                    button.aside__filters-submit-button.button.button--fill-yellow.button--p-tb15.text.text--black.text--fw700.text--fs-1_05vw(type="submit") Найти пекарню
+                .aside__features
+                  ul.list
+                    li.aside__features-items
+                      p.aside__features-item-text.aside__features-item-text--time.text.text--black.text--fs-1_09vw Доставка точно
+                        br
+                        | ко времени,
+                        br
+                        | от 30 минут
+                    li
+                      .aside__border.aside__border--fill-red
+                    li.aside__features-items
+                      p.aside__features-item-text.aside__features-item-text--map.text.text--black.text--fs-1_09vw Доставляем
+                        br
+                        | осетинские пироги
+                        br
+                        | по всей Москве
+                    li
+                      .aside__border.aside__border--fill-red
+                    li.aside__features-items
+                      p.aside__features-item-text.aside__features-item-text--rate.text.text--black.text--fs-1_09vw 15 лет на рынке.
+                        br
+                        | Топ позиции в
+                        br
+                        | рейтинге пекарен
+                    li
+                      .aside__border.aside__border--fill-red
+                    li.aside__features-items
+                      p.aside__features-item-text.aside__features-item-text--delivery.text.text--black.text--fs-1_09vw Бесплатная доставка
+                        br
+                        | при заказе от
+                        br
+                        | 1 000 рублей
+                .aside__reviews
+                  .aside__reviews-content
+                    .row.row--jc-c
+                      h2.aside__reviews-content-headline.text.text--black29.m--b30 Отзывы:
+                    .row.row--jc-fe.m--b25
+                      ul.list.column.column--ai-fe
+                        - for (let i = 0 ; i < 2; i ++)
+                          li.aside__reviews-cart
+                            .row
+                              .aside__reviews-cart-avatar.m--r15
+                                img.aside__reviews-cart-avatar(src="%=static=%img/content/avatar.png")
+                              .b.grow
+                                h2.text.text--black16.text--fw400.m--b5 Андрей
+                                .row.row--ai-c.m--b10
+                                  ul.aside__reviews-cart-rate-list.list.row.m--r10
+                                    - for (let i = 0; i < 4; i++)
+                                      li.aside__reviews-cart-rate-list-items
+                                        != pugHelpers.Icon.call(locals, {iconName: 'star', className: 'star'})
+                                  p.aside__reviews-cart-date-text.text.text--grayMediumLight16.m--r30 20 апреля
+                                  .aside__reviews-cart-likes-wrap.row.row--ai-c
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--dislike.d-block.m--r15
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--like.d-block
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                            p.aside__reviews-cart-user-text.text Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!
+                          li.aside__reviews-cart
+                            .row
+                              .aside__reviews-cart-avatar.m--r15
+                                img.aside__reviews-cart-avatar(src="%=static=%img/content/avatar.png")
+                              .b.grow
+                                h2.text.text--black16.text--fw400.m--b5 Ирина
+                                .row.row--ai-c.m--b10
+                                  ul.aside__reviews-cart-rate-list.list.row.m--r10
+                                    - for (let i = 0; i < 4; i++)
+                                      li.aside__reviews-cart-rate-list-items
+                                        != pugHelpers.Icon.call(locals, {iconName: 'star', className: 'star'})
+                                  p.aside__reviews-cart-date-text.text.text--grayMediumLight16.m--r30 20 апреля
+                                  .aside__reviews-cart-likes-wrap.row.row--ai-c
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--dislike.d-block.m--r15
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--like.d-block
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                            p.aside__reviews-cart-user-text.text В этом месте пироги заказывала первый раз. Я заказала 8 штук с разными начинками и все оказались очень вкусные.Тесто изумительно тонкое,начинки много! Особенно вкусные сладкие пироги!
+                          li.aside__reviews-cart
+                            .row
+                              .aside__reviews-cart-avatar.m--r15
+                                img.aside__reviews-cart-avatar(src="%=static=%img/content/avatar.png")
+                              .b.grow
+                                h2.text.text--black16.text--fw400.m--b5 Егор Михальчук
+                                .row.row--ai-c.m--b10
+                                  ul.aside__reviews-cart-rate-list.list.row.m--r10
+                                    - for (let i = 0; i < 4; i++)
+                                      li.aside__reviews-cart-rate-list-items
+                                        != pugHelpers.Icon.call(locals, {iconName: 'star', className: 'star'})
+                                  p.aside__reviews-cart-date-text.text.text--grayMediumLight16.m--r30 20 апреля
+                                  .aside__reviews-cart-likes-wrap.row.row--ai-c
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--dislike.d-block.m--r15
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--like.d-block
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                            p.aside__reviews-cart-user-text.text Ура!!! Наконец-то Вы переехали в Москву. У Вас очень вкусные пироги. Качественно и недорого!!! Спасибо что Вы есть!!!
+                    .row.row--jc-c.m--b15
+                      .b--w330
+                        button.aside__filters-submit-button.button.button--fill-yellow.button--p-tb15.text.text--black21.text--fw700(type="submit") Добавить отзыв
+                    .row.row--jc-c
+                      a.aside__reviews-link.text.text--black16.text--td-none(href="#") Читать все отзывы
+                            
+            .content.b--resize-w70.grow
+              .slider.owl-carousel.owl-theme
+                .slider__slide
+                  h2.slider__slide-title АКЦИЯ! В ДЕНЬ РОЖДЕНИЯ!
+                  .slider__slide-content-wrap.row.row--ai-c
+                    .slider__slide-description-wrap
+                      h2.slider__slide-description-headline Скидка
+                      p.slider__slide-description-text-percent 10%
+                      p.slider__slide-description-text за 5 дней до и после
+                    .slider__slide-link-wrap
+                      a.slider__slide-button.button.button--fill-yellow.button--p-tb15.text.text--black21.text--fw700(href="#") Заказать пироги
+                .slider__slide
+                  h2.slider__slide-title АКЦИЯ! В ДЕНЬ РОЖДЕНИЯ!
+                  .slider__slide-content-wrap.row.row--ai-c
+                    .slider__slide-description-wrap
+                      h2.slider__slide-description-headline Скидка
+                      p.slider__slide-description-text-percent 20%
+                      p.slider__slide-description-text за 5 дней до и после
+                    .slider__slide-link-wrap
+                      a.slider__slide-button.button.button--fill-yellow.button--p-tb15.text.text--black21.text--fw700(href="#") Заказать пироги
+                .slider__slide
+                  h2.slider__slide-title АКЦИЯ! В ДЕНЬ РОЖДЕНИЯ!
+                  .slider__slide-content-wrap.row.row--ai-c
+                    .slider__slide-description-wrap
+                      h2.slider__slide-description-headline Скидка
+                      p.slider__slide-description-text-percent 25%
+                      p.slider__slide-description-text за 5 дней до и после
+                    .slider__slide-link-wrap
+                      a.slider__slide-button.button.button--fill-yellow.button--p-tb15.text.text--black21.text--fw700(href="#") Заказать пироги
+              .content__headline-wrap
+                h2.content__headline Осетинские пироги с доставкой метро Новогиреево
+              .carts.row.row--jc-sb
+                .carts__good-wrap.carts__good-wrap--left.row.row--jc-sb
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-fish-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio1")#paymentCheckbox1
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox1") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio1" checked)#paymentCheckbox2
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox2") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio1")#paymentCheckbox3
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox3") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio1")#paymentCheckbox4
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox4") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-meat-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio2")#paymentCheckbox5
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox5") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio2" checked)#paymentCheckbox6
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox6") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio2")#paymentCheckbox7
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox7") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio2")#paymentCheckbox8
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox8") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                .carts__good-wrap.row.row--jc-sb
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-chicken-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio3")#paymentCheckbox9
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox9") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio3" checked)#paymentCheckbox10
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox10") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio3")#paymentCheckbox11
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox11") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio3")#paymentCheckbox12
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox12") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-cheese-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio4")#paymentCheckbox13
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox13") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio4" checked)#paymentCheckbox14
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox14") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio4")#paymentCheckbox15
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox15") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio4")#paymentCheckbox16
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox16") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+              .content__headline-wrap.content__headline-wrap--mod2
+                h2.content__headline.m--b15 Осетинские пироги с бесплатной доставкой в Москве
+                p.content__text.m--b25 Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
+                h2.content__headline.content__headline--bordered Осетинские пироги с мясом
+              .carts.row.row--jc-sb
+                .carts__good-wrap.carts__good-wrap--left.row.row--jc-sb
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-fish-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio5")#paymentCheckbox17
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox17") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio5" checked)#paymentCheckbox18
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox18") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio5")#paymentCheckbox19
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox19") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio5")#paymentCheckbox20
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox20") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-meat-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio6")#paymentCheckbox21
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox21") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio6" checked)#paymentCheckbox22
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox22") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio6")#paymentCheckbox23
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox23") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio6")#paymentCheckbox24
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox24") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                .carts__good-wrap.row.row--jc-sb          
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-chicken-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio7")#paymentCheckbox25
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox25") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio7" checked)#paymentCheckbox26
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox26") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio7")#paymentCheckbox27
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox27") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio7")#paymentCheckbox28
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox28") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-cheese-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio8")#paymentCheckbox29
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox29") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio8" checked)#paymentCheckbox30
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox30") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio8")#paymentCheckbox31
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox31") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio8")#paymentCheckbox32
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox32") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+              .content__headline-wrap.content__headline-wrap--mod3
+                h2.content__headline.content__headline--bordered Осетинские пироги с сыром
+              .carts.row.row--jc-sb
+                .carts__good-wrap.carts__good-wrap--left.row.row--jc-sb
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-fish-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio9")#paymentCheckbox33
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox33") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio9" checked)#paymentCheckbox34
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox34") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio9")#paymentCheckbox35
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox35") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio9")#paymentCheckbox36
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox36") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-meat-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio10")#paymentCheckbox37
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox37") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio10" checked)#paymentCheckbox38
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox38") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio10")#paymentCheckbox39
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox39") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio10")#paymentCheckbox40
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox40") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                .carts__good-wrap.row.row--jc-sb
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-chicken-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio11")#paymentCheckbox41
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox41") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio11" checked)#paymentCheckbox42
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox42") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio11")#paymentCheckbox43
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox43") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio11")#paymentCheckbox44
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox44") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                  .carts__good
+                    .carts__good-img-wrap
+                      img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
+                    .carts__good-description-wrap
+                      .carts__good-description-title.row.row--jc-sb.row--ai-c
+                        span.carts__good-description-cheese-icon.d-block
+                        a.carts__good-description.text.text--td-none.text--fw700(href="#") Со свекольными листьями, с нежным сыром
+                          br
+                          | и зеленью с грибами
+                      .carts__good-description-payment
+                        .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
+                          p.carts__good-description-payment-price 750
+                            span.carts__good-description-payment-price-span руб.
+                          .carts__good-description-payment-controls.row
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
+                        ul.carts__good-description-payment-checkbox-list.list.row.m--b15
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio12")#paymentCheckbox45
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox45") 800 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio12" checked)#paymentCheckbox46
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox46") 1000 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio12")#paymentCheckbox47
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox47") 1200 г
+                          li.carts__good-description-payment-checkbox-wrap.grow
+                            input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio12")#paymentCheckbox48
+                            label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox48") 1400 г
+                        .b
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+              .content__headline-wrap.content__headline-wrap--mod4
+                h2.content__headline.m--b15 Наши пекарни работают по всей Москве
+                p.content__text.m--b25 Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
+                .content__map
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad22a622fcf178f2d366e25d50bc3e10356fd39eb60635a4f95272b6574d55c88&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
         
       footer.page-footer
         .footer-content
-
+          .footer-content__row-top
+            .container.container--footer.row.row--jc-sb.m--b15
+              .footer-content__row-top-block-left
+                .logo.logo--footer
+                  a.logo__link.row.row--ai-c.text--td-none(href="index.html")
+                    .logo__img-wrap.m--r25
+                      img(src="%=static=%img/content/logo.png" alt="Осетинские пироги от Виктории")
+                    .b
+                      p.text.text--white.text.m--b5.text--fs-1_41vw Осетинские пироги
+                      p.text.text--white С любовью от Виктории
+                .user-block.user-block--footer.column
+                  p.user-block__work-time.text.text--white16.m--b15.p--l10 Время работы пекарни: с 9:00 до 21:00
+                  .footer-content__row-top-tel-wrap.row.row--ai-c
+                    span.user-block__phone-icon.m--r15
+                      != pugHelpers.Icon.call(locals, {iconName: 'phone', className: 'phone'})
+                    a.user-block__work-tel.text.text--white.text--fw700.text--fs-1_51vw(href="tel:+7952007580") +7 (495) 200-75-80
+                .footer-content__payment-wrap.row.row--ai-c
+                  h2.footer-content__payment.m--r15 Можно оплатить:
+                  a.footer-content__payment-icon(href="#")
+              .footer-content__row-top-block-right.grow
+                ul.nav--description.nav--footer.list.row.row--jc-sb
+                  li.nav__items
+                    a.nav__link.nav__link--company.d-block.text--white.text--td-none(href="#") О компании
+                  li.nav__items
+                    a.nav__link.nav__link--pay.d-block.text--white.text--td-none(href="#") Оплата
+                  li.nav__items
+                    a.nav__link.nav__link--delivery.d-block.text--white.text--td-none(href="#") Доставка
+                  li.nav__items
+                    a.nav__link.nav__link--actions.d-block.text--white.text--td-none(href="#") Акции
+                  li.nav__items
+                    a.nav__link.nav__link--reviews.d-block.text--white.text--td-none(href="#") Отзывы
+                  li.nav__items
+                    a.nav__link.nav__link--contacts.d-block.text--white.text--td-none(href="#") Контакты
+                .footer-content__nav-wrap.grow
+                  .footer-content__headline-wrap.m--b15
+                    h2.footer-content__headline Осетинские пироги:
+                  ul.nav--navigation.nav--navigation-footer.list.row.row--jc-sb.m--b15
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С мясом
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С курицей
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С рыбой
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С сыром
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С капустой
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С картошкой
+                  ul.nav--navigation.nav--navigation-footer.list.row.row--jc-sb
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С грибами
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С луком
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С перцем
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С сладкие
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") С постные
+                    li.nav__items
+                      a.nav__link.d-block.text--white.text--td-none.text--uppercase.text--fw700(href="#") Традиционные
+            .footer-content__row-top-icon-wrap
+              .container.container--footer
+                .row.row--jc-fe
+                  span.footer-content__row-top-icon
+          .footer-content__row-bottom
+            .container.container--footer
+              .footer-content__row-bottom-copyright-wrap.row.row--jc-sb.row--ai-c
+                p.footer-content__copyright © 2006 - 2018 Осетинские пироги
+                .row.row--ai-c
+                  a.footer-content__developers(href="#") Создание и продвижение сайтов
+            
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/owl.carousel.min.js')
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
     script(src='%=static=%js/main%=hash=%%=min=%.js')

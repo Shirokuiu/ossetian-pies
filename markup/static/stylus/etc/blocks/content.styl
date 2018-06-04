@@ -1,0 +1,91 @@
+.content__headline-wrap
+  padding 15px 40px
+  &--mod2
+    padding-top 35px
+    .content__headline
+      font-size 29px
+      line-height 34px
+  &--mod3
+    padding-top 25px
+    .content__headline
+      font-size 29px
+      line-height 34px
+  &--mod4
+    padding-top 20px
+    padding-bottom 40px
+    .content__headline
+      font-size 29px
+      line-height 34px
+  
+.content__headline
+  reset()
+  
+  font-size 35px
+  line-height 42px
+  color red
+  &--bordered
+    display flex
+    align-items center
+    line-height 33px
+    &::after
+      content ''
+      
+      flex-grow 1
+      height 1px
+      margin-left 10px
+      
+      background-color red
+  
+.content__text
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color black
+  
+.content__map
+  height 500px
+  
+@media(max-width 1199px)
+  .content__headline-wrap
+    padding-left 20px
+    padding-right 20px
+    &--mod4
+      padding-bottom 20px
+      
+@media(max-width 910px)
+  .content__headline-wrap
+    &--mod2
+      .content__headline
+        font-size 3.8vw
+        line-height 5vw
+    &--mod3
+      .content__headline
+        font-size 3.8vw
+        line-height 5vw
+  
+  .content__headline 
+    font-size 3.8vw
+    line-height 5vw
+    
+  .content__text
+    font-size 14px
+    line-height 17px
+    
+@media(max-width 600px)
+  .content__map
+    height 300px
+    
+@media(max-width 490px)
+  .content__headline-wrap
+    &--mod2
+      .content__headline
+        font-size 18px
+        line-height 21px
+    &--mod3
+      .content__headline
+        font-size 18px
+        line-height 21px
+  
+  .content__headline 
+    font-size 18px
+    line-height 21px

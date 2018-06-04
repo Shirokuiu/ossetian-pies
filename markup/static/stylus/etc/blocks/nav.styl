@@ -1,0 +1,164 @@
+.nav
+  &--description,
+  &--navigation
+    position relative
+    
+    padding-left 61px
+    padding-right 26px
+    .nav__link
+      position relative
+      
+      opacity 0.7
+      
+      transition all 200ms linear
+      &::after
+        content ''
+        
+        position absolute
+        left 0
+        bottom -2px
+        
+        width 100%
+        height 1px
+        margin auto
+        
+        background-color white
+        
+        transition width 200ms linear
+      &:hover
+        opacity 1
+        &::after
+          width 0
+      &--company,
+      &--pay,
+      &--delivery,
+      &--actions,
+      &--reviews,
+      &--contacts
+        &::before
+          content ''
+          
+          position absolute
+          top 0
+          left -41px
+          bottom 0
+          
+          margin auto
+      &--company
+        &::before
+          bg($company)
+      &--pay
+        &::before
+          bg($pay)
+      &--delivery
+        &::before
+          left -52px
+          
+          bg($delivery)
+      &--actions
+        &::before
+          bg($actions)
+      &--reviews
+        &::before
+          bg($reviews)
+      &--contacts
+        &::before
+          bg($contacts)
+  &--footer
+    margin-bottom 39px
+    padding-left 43px
+  &--navigation
+    padding 0
+    .nav__link
+      opacity 1
+      &::after
+        background-color blue
+        
+        transition width 0.1s linear
+      &:hover
+        color red
+  &--navigation-footer
+    .nav__items
+      display flex
+      width 175px
+    .nav__link
+      opacity 0.7
+      &::after
+        width 0
+        
+        background-color white
+        
+        transition width 0.1s linear
+      &:hover
+        color white
+        
+        opacity 1
+        &::after
+          width 100%
+          
+@media(max-width 1450px)
+  .nav
+    &--description
+      padding-left 46px
+      padding-right 6px
+      .nav__link
+        &--company,
+        &--pay,
+        &--delivery,
+        &--actions,
+        &--reviews,
+        &--contacts
+          &::before
+            left -30px
+        &--company
+          &::before
+            bg($company1450)
+        &--pay
+          &::before
+            bg($pay1450)
+        &--delivery
+          &::before
+            bg($delivery1450)
+        &--actions
+          &::before
+            bg($actions1450)
+        &--reviews
+          &::before
+            bg($reviews1450)
+        &--contacts
+          &::before
+            bg($contacts1450)
+            
+@media(max-width 1199px)
+  .nav
+    &--description
+      .nav__link
+        font-size 12px
+        line-height 15px
+    &--footer
+      margin-bottom 20px
+      padding-left 33px
+      .nav__link
+        font-size 16px
+        line-height 19px
+    &--navigation-footer
+      .nav__link
+        font-size 19px
+        line-height 24px
+        
+@media(max-width 890px)
+  .nav
+    &--navigation
+      flex-grow 1
+      flex-direction column
+      .nav__link
+        font-size 21px
+        line-height 25px
+        text-align center
+        &::after
+          display none
+    &--navigation-footer
+      flex-direction row
+      .nav__link
+        font-size 16px
+        line-height 17px

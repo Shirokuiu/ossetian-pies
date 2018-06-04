@@ -1,0 +1,200 @@
+.slider
+  position relative
+
+.slider__slide
+  box-sizing border-box
+  min-height 400px
+  padding-left 100px
+  padding-top 30px
+  
+  background-image url('%=static=%content/slide1.jpg')
+  background-repeat no-repeat
+  
+.slider__slide-title
+  reset()
+  
+  margin-bottom 30px
+  
+  font-size 53px
+  line-height 63px
+  color white
+  
+.slider__slide-description-wrap
+  box-sizing border-box
+  width 245px
+  margin-left 30px
+  margin-right 55px
+  padding 10px
+  
+  border 3px solid white
+  border-radius 10px
+  
+.slider__slide-description-headline
+  reset()
+
+  font-size 53px
+  font-weight 700
+  line-height 63px
+  color white
+  text-transform uppercase
+  
+.slider__slide-description-text-percent
+  reset()
+  
+  font-size 117px
+  font-weight 700
+  line-height 117px
+  color white
+  
+.slider__slide-description-text
+  reset()
+  
+  font-size 21px
+  line-height 25px
+  color white
+  text-align center
+  
+.slider__slide-link-wrap
+  width 265px
+  
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled
+  display block
+  
+.owl-theme .owl-nav
+  margin-top auto
+  
+.owl-nav
+  position absolute
+  top -45px
+  left 0
+  right 0
+  bottom 0
+  
+  box-sizing border-box
+  display flex
+  justify-content space-between
+  height 65px
+  margin auto auto
+  padding-left 40px
+  padding-right 40px
+  
+.owl-prev,
+.owl-next
+  span
+    position relative
+    
+    display block
+    width 28px
+    height 45px
+    
+    font-size 0
+    &::before,
+    &::after
+      center-absolute()
+
+      content ''
+
+      width 100%
+      height 5px
+
+      background-color #fedf47
+    &::before
+      top 17px
+      
+      transform rotate(45deg)
+    &::after
+      bottom 17px
+      
+      transform rotate(-45deg)
+      
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot
+  &:focus
+    outline none
+      
+.owl-theme .owl-nav [class*='owl-']:hover
+  background transparent
+  
+.owl-next
+  transform rotate(180deg)
+  
+.owl-dots
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  
+.owl-theme .owl-dots .owl-dot
+  &:focus
+    outline none
+  
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+  background #fede47
+  
+@media(max-width 1024px)
+  .slider__slide
+    background-position-x -410px
+    
+  .slider__slide-title
+    font-size 5.15vw
+    line-height 6.2vw
+    
+  .slider__slide-description-headline
+    font-size 5.15vw
+    line-height 6.2vw
+    
+  .slider__slide-description-text-percent
+    font-size 11.199vw
+    line-height 9.199vw
+    text-align center
+    
+  .slider__slide-description-text
+    font-size 1.8vw
+    line-height 2vw
+    
+  .slider__slide
+    display flex
+    flex-direction column
+    justify-content space-around
+    padding-top 0
+    padding-left 0
+    
+  .slider__slide-title
+    text-align center
+    margin-top auto
+    margin-bottom 0
+    
+  .slider__slide-description-wrap
+    margin 0
+    margin-bottom 10px
+    
+  .slider__slide-content-wrap
+    flex-direction column
+    align-items center
+    margin-top auto
+    margin-bottom auto
+    
+  .slider__slide-description-headline
+    text-align center
+  
+  .owl-theme .owl-nav
+    display none
+    
+  .slider__slide-button
+    padding-top 10px
+    padding-bottom 10px
+    
+    font-size 19px
+    line-height 23px
+    
+@media(max-width 600px)
+  .slider__slide
+    background-position-x -540px
+    
+  .slider__slide-description-wrap
+    width auto
+    
+@media(max-width 415px)
+  .slider__slide-description-wrap
+    transform translateY(-37px)
+  
+    

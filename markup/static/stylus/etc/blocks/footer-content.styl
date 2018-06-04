@@ -1,0 +1,130 @@
+.footer-content
+  background: linear-gradient(to top, #EF4643, #F86846);
+
+.footer-content__row-top
+  padding-top 35px
+  padding-bottom 25px
+  
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.1);
+  
+.footer-content__headline-wrap
+  padding-bottom 15px
+  
+  border-bottom 1px solid rgba(255, 255, 255, 0.7)
+  
+.footer-content__headline
+  reset()
+  
+  font-size 21px
+  line-height 25px
+  font-weight 700
+  color white
+  
+.footer-content__payment
+  font-size 16px
+  line-height 19px
+  font-weight 400
+  color white
+  
+.footer-content__payment-icon
+  display flex
+  justify-content center
+  align-items center
+  width 119px
+  height 40px
+  
+  background-color #da1a40
+  
+  border-radius 30px
+  &::before
+    content ''
+    
+    bg($visa)
+    
+.footer-content__row-top-icon
+  bg($footer-row-top-icon)
+  
+.footer-content__row-bottom
+  padding 7px 0
+  padding-bottom 70px
+  
+.footer-content__copyright
+  font-size 16px
+  line-height 19px
+  font-weight 400
+  color white
+  
+.footer-content__developers
+  display flex
+  align-items center
+  
+  font-size 16px
+  line-height 19px
+  font-weight 400
+  color #eac9c0
+  text-decoration none
+  
+  transition all 300ms linear
+  &:hover
+    color white
+  &::after
+    content ''
+    
+    margin-left 20px
+    
+    bg($developers)
+    
+.footer-content__row-top-block-left
+  margin-right 3.5%
+    
+.footer-content__row-top-block-right
+  width 40%
+  padding-top 23px
+  
+@media(max-width 1199px)
+  .footer-content__row-top
+    padding-top 0
+  
+  .footer-content__row-top-block-right
+    width auto
+    
+  .footer-content__nav-wrap
+    margin-bottom 25px
+    
+@media(max-width 800px)
+  .footer-content__row-top
+    padding-bottom 10px
+  
+  .footer-content__nav-wrap
+    display none
+    
+  .footer-content__row-top-tel-wrap
+    justify-content center
+    
+@media(max-width 700px)
+  .footer-content__row-top
+    padding-top 10px
+    .container
+      margin-bottom 0
+  
+  .footer-content__row-top-block-right
+    display none
+    
+  .footer-content__payment-wrap
+    display none
+    
+  .footer-content__row-top-icon-wrap
+    display none
+    
+  .footer-content__copyright
+    font-size 12px
+    line-height 15px
+    
+  .footer-content__developers
+    font-size 12px
+    line-height 15px
+    
+@media(max-width 600px)
+  .footer-content__row-bottom-copyright-wrap
+    flex-direction column
+  

@@ -1,0 +1,247 @@
+.carts
+  padding 15px
+  
+  background-color #f2f2f2
+  
+.carts__good-wrap
+  &--left
+    margin-right 1.6%
+  
+.carts__good
+//  width 360px
+  width 48.4%
+  
+  background-color white
+  box-shadow: 0px 6px 15px -9px rgba(0,0,0,0.48)
+  
+  border-radius 5px
+  
+.carts__good-img
+  border-radius 5px 5px 0 0
+  
+.carts__good-description-wrap
+  padding 10px
+  
+.carts__good-description-title
+  padding-bottom 15px
+  
+  border-bottom 1px solid #dbdbdb
+  
+.carts__good-description-fish-icon
+  bg($fish)
+  
+.carts__good-description-meat-icon
+  bg($meat)
+  
+.carts__good-description-chicken-icon
+  bg($chicken)
+  
+.carts__good-description-cheese-icon
+  bg($cheese)
+  
+.carts__good-description
+  width 73.6%
+  
+  font-size 0.99vw
+  
+.carts__good-description-payment-price-wrap
+  padding 20px
+  
+.carts__good-description-payment-price
+  reset()
+  
+  font-size 2.24vw
+  line-height 2.652vw
+  font-weight 700
+  color green
+  
+.carts__good-description-payment-price-span
+  margin-left 5px
+  
+  font-size 24px
+  line-height 29px
+  font-weight 400
+  
+.carts__good-description-payment-controls
+  box-sizing border-box
+  width 40%
+  height 40px
+  
+  border 1px solid #c0c0c0
+  border-radius 5px
+  
+.carts__good-description-payment-control
+  display flex
+  justify-content center
+  align-items center
+  
+  background-color #f5f5f5
+  &--minus
+    border-radius 5px 0 0 5px
+    &::before
+      content ''
+      
+      width 51%
+      height 4px
+      
+      background-color #808080
+  &--plus
+    position relative
+    
+    border-radius 0 5px 5px 0
+    &::before,
+    &::after
+      center-absolute()
+      
+      content ''
+      
+      width 51%
+      height 4px
+      
+      background-color #808080
+    &::before
+      transform rotate(90deg)
+      
+.carts__good-description-payment-input
+  font-size 1.09vw
+  line-height 1.31vw
+  color #696969
+  
+.carts__good-description-payment-checkbox
+  &:checked + .carts__good-description-payment-checkbox-label
+    color red
+    
+    box-shadow 0 0 0 0.15rem rgba(241, 67, 61, 1)
+    
+    border-color red
+  
+.carts__good-description-payment-checkbox-label
+  box-sizing border-box
+  padding 5px
+  
+  font-size 0.99vw
+  line-height 23px
+  font-weight 500
+  color #c1bcc0
+  text-align center
+  
+  border 1px solid #c1bcbc
+  border-radius 5px
+  
+  cursor pointer
+  
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+@media(max-width 1580px)
+  .carts__good-description
+    flex-grow 1
+    flex-basis 150px
+    width auto
+    
+  .carts__good-description-fish-icon
+    margin-right 10px
+    
+    bg($fish1580)
+    
+  .carts__good-description-meat-icon
+    margin-right 10px
+    
+    bg($meat1580)
+    
+  .carts__good-description-chicken-icon
+    margin-right 10px
+    
+    bg($chicken1580)
+    
+  .carts__good-description-cheese-icon
+    margin-right 10px
+    
+    bg($cheese1580)
+    
+@media(max-width 1450px)
+  .carts__good-add-button
+    padding-top 10px
+    padding-bottom 10px
+    font-size 15px
+    line-height 18px
+    
+  .carts__good-description-payment-controls
+    height 30px
+    
+  .carts__good-description-payment-price-wrap
+    padding 15px 5px
+    
+  .carts__good-description-payment-control
+    &--minus
+      &::before
+        height 2px
+    &--plus
+      &::before,
+      &::after
+        height 2px
+        
+@media(max-width 1199px)
+  .carts__good-description
+    font-size 14px
+    line-height 17px
+    
+@media(max-width 1024px)
+  .carts
+    flex-direction column
+    
+  .carts__good-wrap
+    &--left
+      margin-right 0
+      margin-bottom 20px
+      
+  .carts__good-description-payment-controls
+    width 160px
+    height 45px
+    
+  .carts__good-description-payment-input
+    font-size 21px
+    line-height 25px
+    
+  .carts__good-description-payment-control
+    &--minus
+      &::before
+        width 27px
+    &--plus
+      &::before,
+      &::after
+        width 27px
+        
+  .carts__good-description-payment-price
+    font-size 27px
+    line-height 31px
+    
+  .carts__good-description-payment-checkbox-label
+    font-size 19px
+    line-height 24px
+    
+  .carts__good-description
+    font-size 17px
+    line-height 22px
+    
+@media(max-width 655px)
+  .carts__good-description
+    font-size 15px
+    line-height 18px
+    
+  .carts__good-description-payment-checkbox-label
+    font-size 18px
+    line-height 21px
+    
+@media(max-width 600px)
+  .carts__good-wrap
+    flex-direction column
+    
+  .carts__good
+    width auto
+    margin-bottom 15px
+    &:last-child
+      margin-bottom 0
+    
+  .carts__good-description
+    font-size 3.5vw
+    line-height 4.5vw

@@ -3,6 +3,9 @@
 html,
 body
   height 100%
+  
+.aside-open
+  overflow hidden
 
 .wrapper
   display flex
@@ -16,10 +19,18 @@ body
   flex 0 0 auto
   
 .container
-  width 1160px
+  max-width 1880px
   margin 0 auto
   padding 0 20px
+  &--footer
+    padding 0 100px
   
 img
   width 100%
   height auto
+  
+@media(max-width 1199px)
+  .container
+    &--footer
+      flex-direction column-reverse
+      padding 0 20px

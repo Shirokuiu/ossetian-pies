@@ -1,0 +1,63 @@
+.logo
+  &--header
+    .logo__link
+      position relative
+      
+      padding-right 25px
+      &::after
+        content ''
+
+        position absolute
+        top 0
+        right 0
+        bottom 0
+
+        width 1px
+        height 80px
+        margin auto
+
+        background-color rgba(255, 255, 255, 0.4)
+  &--footer
+    margin-bottom 65px
+
+.logo__img-wrap
+  width 60px
+  height 60px
+  
+@media(max-width 1450px)
+  .logo
+    &--footer
+      margin-bottom 50px
+      
+@media(max-width 1199px)
+  .logo
+    &--header
+      margin-left 65px
+    &--footer
+      display none
+  
+  .logo__slogan-text
+    font-size 17px
+    line-height 20px
+    
+  .logo__text-author
+    font-size 15px
+    line-height 19px
+    
+@media(max-width 890px)
+  .logo
+    &--header
+      margin-left auto
+      margin-right auto
+      .logo__link
+        &::after
+          display none
+          
+@media(max-width 470px)
+  .logo
+    &--header
+      .logo__link
+        padding-right 0
+  
+  .logo__img-wrap
+    display none
