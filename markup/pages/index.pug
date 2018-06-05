@@ -37,7 +37,7 @@ html(class="no-js", lang="ru")
                     a.nav__link.nav__link--contacts.d-block.text--white.text--td-none(href="#") Контакты
               .user-block.user-block--header.row
                 a.user-block__basket.row.row--jc-c.row--ai-c.b--w80.m--r15(href="#")
-                  span.user-block__basket-indicator.d-block 10
+                  span.user-block__basket-indicator.d-block 0
                   span.user-block__basket-icon
                 .b
                   p.user-block__work-time.text.text--white16.m--b10.p--l10 Время работы пекарни: с 9:00 до 21:00
@@ -82,13 +82,13 @@ html(class="no-js", lang="ru")
                   .user-block__fixed-basket-result-left-wrap.row.row--ai-c.m--r30
                     span.user-block__fixed-basket-basket-icon.d-block.m--r15
                     p.user-block__fixed-basket-result.text
-                      span.user-block__fixed-basket-result-span 12
+                      span.user-block__fixed-basket-result-span.user-block__fixed-basket-result-span--goods 0
                       | товаров
                   .b.row.row--ai-c
                     span.user-block__fixed-basket-purse-icon.d-block.m--r15
                       != pugHelpers.Icon.call(locals, {iconName: 'purse', className: 'purse'})
                     p.user-block__fixed-basket-result.text
-                      span.user-block__fixed-basket-result-span 5 200
+                      span.user-block__fixed-basket-result-span.user-block__fixed-basket-result-span--price 0
                       | руб.
               li.user-block__fixed-list-work-time.row.row--ai-c
                 span.user-block__fixed-basket-time-icon.d-block.m--r15
@@ -327,11 +327,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart1 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -347,7 +348,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio1")#paymentCheckbox4
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox4") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton1 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -359,11 +360,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart2 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -379,7 +381,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio2")#paymentCheckbox8
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox8") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton2 Добавить в корзину
                 .carts__good-wrap.row.row--jc-sb
                   .carts__good
                     .carts__good-img-wrap
@@ -392,11 +394,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart3 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -412,7 +415,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio3")#paymentCheckbox12
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox12") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton3 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -424,11 +427,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart4 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -444,7 +448,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio4")#paymentCheckbox16
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox16") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton4 Добавить в корзину
               .content__headline-wrap.content__headline-wrap--mod2
                 h2.content__headline.m--b15 Осетинские пироги с бесплатной доставкой в Москве
                 p.content__text.m--b25 Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
@@ -462,11 +466,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart5 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -482,7 +487,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio5")#paymentCheckbox20
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox20") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton5 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -494,11 +499,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart6 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -514,7 +520,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio6")#paymentCheckbox24
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox24") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton6 Добавить в корзину
                 .carts__good-wrap.row.row--jc-sb          
                   .carts__good
                     .carts__good-img-wrap
@@ -527,11 +533,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart7 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -547,7 +554,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio7")#paymentCheckbox28
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox28") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton7 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -559,11 +566,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart8 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -579,7 +587,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio8")#paymentCheckbox32
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox32") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton8 Добавить в корзину
               .content__headline-wrap.content__headline-wrap--mod3
                 h2.content__headline.content__headline--bordered Осетинские пироги с сыром
               .carts.row.row--jc-sb
@@ -595,11 +603,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart9 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -615,7 +624,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio9")#paymentCheckbox36
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox36") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton9 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -627,11 +636,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart10 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -647,7 +657,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio10")#paymentCheckbox40
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox40") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton10 Добавить в корзину
                 .carts__good-wrap.row.row--jc-sb
                   .carts__good
                     .carts__good-img-wrap
@@ -660,11 +670,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart11 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -680,7 +691,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio11")#paymentCheckbox44
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox44") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white21.text--fw700.text--fs-1_09vw(type="button")#cartButton11 Добавить в корзину
                   .carts__good
                     .carts__good-img-wrap
                       img.carts__good-img(src="%=static=%img/content/carts__good-img.jpg")
@@ -692,11 +703,12 @@ html(class="no-js", lang="ru")
                           | и зеленью с грибами
                       .carts__good-description-payment
                         .carts__good-description-payment-price-wrap.row.row--jc-sb.row--ai-c
-                          p.carts__good-description-payment-price 750
-                            span.carts__good-description-payment-price-span руб.
+                          .row
+                            p.carts__good-description-payment-price(data-price="750" data-total-price="750" data-total-count="1")#cart12 750
+                            span.carts__good-description-payment-price-span.m--t-a руб.
                           .carts__good-description-payment-controls.row
                             button.carts__good-description-payment-control.carts__good-description-payment-control--minus.button.grow(type="button")
-                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="2")
+                            input.carts__good-description-payment-input.input.text--center.grow(type="text" value="1")
                             button.carts__good-description-payment-control.carts__good-description-payment-control--plus.button.grow(type="button")
                         ul.carts__good-description-payment-checkbox-list.list.row.m--b15
                           li.carts__good-description-payment-checkbox-wrap.grow
@@ -712,7 +724,7 @@ html(class="no-js", lang="ru")
                             input.carts__good-description-payment-checkbox.input.input--checkbox(type="radio" name="paymentRadio12")#paymentCheckbox48
                             label.carts__good-description-payment-checkbox-label.d-block(for="paymentCheckbox48") 1400 г
                         .b
-                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white.text--fw700.text--fs-1_09vw(type="button") Добавить в корзину
+                          button.carts__good-add-button.button.button--fill-green.button--p-tb14.text.text--white.text--fw700.text--fs-1_09vw(type="button")#cartButton12 Добавить в корзину
               .content__headline-wrap.content__headline-wrap--mod4
                 h2.content__headline.m--b15 Наши пекарни работают по всей Москве
                 p.content__text.m--b25 Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги4 пекарен, в которых выпекаются осетинские пироги на любой вкус - сладкие, мясные, с капустой, сырные и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
