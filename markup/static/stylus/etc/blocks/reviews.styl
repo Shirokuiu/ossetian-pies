@@ -1,0 +1,204 @@
+.reviews__submit-wrap
+  padding 20px 0
+  
+  background-color #fff6d7
+  
+.reviews__submit-img-wrap
+  width 256px
+  height 256px
+  margin-right 70px
+  margin-left 8%
+  
+.reviews__submit-input
+  box-sizing border-box
+  padding-top 10px
+  padding-left 50px
+  padding-right 20px
+  padding-bottom 15px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  
+  background-color white
+  
+  border 1px solid #cbcac6
+  border-radius 3px
+  
+  transition 0.2s ease
+  &:hover
+    border-color red
+  &:focus
+    border-color red
+    + .reviews__submit-input-indicator-person
+        .person
+          fill red
+    + .reviews__submit-input-indicator-tel
+        .tel
+          fill red
+  &--address-basket
+    padding-left 20px
+
+.reviews__content-list
+  margin-bottom 20px
+          
+.reviews__submit-input-wrap
+  position relative
+  
+  margin-right 30px
+  &:last-child
+    margin-right 0
+  &--basket
+    margin-right 0
+  
+.reviews__submit-input-indicator-person,
+.reviews__submit-input-indicator-tel
+  position absolute
+  top 0
+  left 15px
+  bottom 0
+  
+  width 22px
+  height 24px
+  margin auto
+  .person,
+  .tel
+    display block
+    width 22px
+    height 24px
+    
+    fill #dcdcdc
+    
+.reviews__submit-textarea
+  box-sizing border-box
+  height 100px
+  padding 10px 15px
+  
+  background-color white
+  
+  border 1px solid #cbcac6
+  border-radius 3px
+  
+  resize none
+  
+  transition 0.2s ease
+  &:hover
+    border-color red
+  &:focus
+    border-color red
+    
+.reviews__content-headline
+  font-size 34px
+  line-height 42px
+  color red
+  
+.reviews__review-container
+  width 68%
+  
+  border 1px solid #dcdcdc
+  
+@media(max-width 1200px)
+  .reviews__submit-img-wrap
+    display none
+    
+  .reviews__submit-form
+    margin-left auto
+    
+  .reviews__submit-input,
+  .reviews__submit-textarea
+    &::-webkit-input-placeholder {
+      color #929292
+      font-size 16px
+      line-height 19px
+      font-weight 300
+
+      opacity: 1;
+    }
+    &:-moz-input-placeholder {
+      color #929292
+      font-size 16px
+      line-height 19px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      color #929292
+      font-size 16px
+      line-height 19px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color #929292
+      font-size 16px
+      line-height 19px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    
+  .reviews__submit-textarea
+    font-size 16px
+    line-height 19px
+    
+@media(max-width 570px)
+  .reviews__submit-input-wrap
+    &--basket-order
+      margin-right 0
+      margin-bottom 15px
+    
+@media(max-width 420px)
+  .reviews__submit-input,
+  .reviews__submit-textarea
+    font-size 16px
+    line-height 19px
+    &::-webkit-input-placeholder {
+      color #929292
+      font-size 14px
+      line-height 17px
+      font-weight 300
+
+      opacity: 1;
+    }
+    &:-moz-input-placeholder {
+      color #929292
+      font-size 14px
+      line-height 17px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      color #929292
+      font-size 14px
+      line-height 17px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color #929292
+      font-size 14px
+      line-height 17px
+      font-family: 'Roboto', sans-serif;
+      font-weight 300
+
+      opacity: 1;
+    }
+    
+@media(max-width 360px)
+  .reviews__review-container
+    padding 10px
+    .aside__reviews-cart
+      padding 0
+    .aside__reviews-cart-date-text
+      font-size 14px
+      line-height 17px
+  

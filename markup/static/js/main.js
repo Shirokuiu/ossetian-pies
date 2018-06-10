@@ -35,6 +35,31 @@
   });
 })();
 
+// select - basket
+(function () {
+  var selectContainer = document.querySelector('.user-block__basket-order-select');
+  var selectInputContainer = document.querySelector('.user-block__basket-order-select-input-wrap');
+  var selectInput = document.querySelector('.user-block__basket-order-select-input');
+  var selectTextContainer = document.querySelector('.user-block__basket-order-select-content');
+  
+  if (selectContainer !== null) {
+    selectInputContainer.addEventListener('click', function () {
+      this.classList.add('user-block__basket-order-select-input-wrap--open');
+      selectTextContainer.classList.remove('hidden');
+    });
+
+    selectTextContainer.addEventListener('click', function (evt) {
+      var target = evt.target.closest('.user-block__basket-order-select-content-text');
+
+      if (target) {
+        selectInput.value = target.textContent;
+        this.classList.add('hidden');
+        selectInputContainer.classList.remove('user-block__basket-order-select-input-wrap--open');
+      }
+    });
+  }
+})();
+
 // carts
 (function () {
   var container = document.querySelectorAll('.carts__good-description-payment');

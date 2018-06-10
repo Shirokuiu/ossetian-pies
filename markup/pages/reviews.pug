@@ -36,7 +36,7 @@ html(class="no-js", lang="ru")
                   li.nav__items
                     a.nav__link.nav__link--contacts.d-block.text--white.text--td-none(href="#") Контакты
               .user-block.user-block--header.row
-                a.user-block__basket.row.row--jc-c.row--ai-c.b--w80.m--r15(href="#")
+                a.user-block__basket.row.row--jc-c.row--ai-c.b--w80.m--r15(href="basket.html")
                   span.user-block__basket-indicator.d-block 0
                   span.user-block__basket-icon
                 .b
@@ -215,6 +215,52 @@ html(class="no-js", lang="ru")
                         | при заказе от
                         br
                         | 1 000 рублей
+                        
+            .content.b--resize-w70.grow
+              .reviews
+                .reviews__submit-wrap.m--b20
+                  .container.row.row--jc-c.row--ai-c
+                    .reviews__submit-img-wrap
+                      img.reviews__submit-img(src="%=static=%img/content/reviews-submit-img.png")
+                    form.reviews__submit-form.m--r-a(action="action.php" method="post")
+                      ul.list
+                        li.row.m--b20
+                          .reviews__submit-input-wrap.grow
+                            input.reviews__submit-input.input(type="text" placeholder="Ваше имя")
+                            span.reviews__submit-input-indicator-person.d-block
+                              != pugHelpers.Icon.call(locals, {iconName: 'person', className: 'person'})
+                          .reviews__submit-input-wrap.grow
+                            input.reviews__submit-input.input(type="tel" placeholder="Ваш телефон")
+                            span.reviews__submit-input-indicator-tel.d-block
+                              != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
+                        li.m--b20
+                          textarea.reviews__submit-textarea.input(placeholder="Напишите ваш отзыв")
+                        li
+                          button.aside__filters-submit-button.button.button--fill-yellow.button--p-tb15.text.text--black.text--fw700.text--fs-1_05vw Добавить отзыв
+                .reviews__content
+                  h2.reviews__content-headline.text.text--center.m--b20 Отзывы клиентов
+                  ul.reviews__content-list.list.column.column--ai-c
+                    - for (let i = 0; i < 5; i++)
+                      li.reviews__review-container.list--items-mb20
+                        ul.list.column.column--ai-fe
+                          li.aside__reviews-cart
+                            .row
+                              .aside__reviews-cart-avatar.m--r15
+                                img.aside__reviews-cart-avatar(src="%=static=%img/content/avatar.png")
+                              .b.grow
+                                h2.text.text--black16.text--fw400.m--b5 Андрей
+                                .row.row--ai-c.m--b10
+                                  ul.aside__reviews-cart-rate-list.list.row.m--r10
+                                    - for (let i = 0; i < 4; i++)
+                                      li.aside__reviews-cart-rate-list-items
+                                        != pugHelpers.Icon.call(locals, {iconName: 'star', className: 'star'})
+                                  p.aside__reviews-cart-date-text.text.text--grayMediumLight16.m--r30 20 апреля
+                                  .aside__reviews-cart-likes-wrap.row.row--ai-c
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--dislike.d-block.m--r15
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                                    span.aside__reviews-cart-likes.aside__reviews-cart-likes--like.d-block
+                                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                            p.aside__reviews-cart-user-text.text Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!
         
       footer.page-footer
         .footer-content

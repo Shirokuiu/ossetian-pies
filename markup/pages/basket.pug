@@ -215,6 +215,103 @@ html(class="no-js", lang="ru")
                         | при заказе от
                         br
                         | 1 000 рублей
+            .content.b--resize-w70.grow
+              h2.aside__filters-headline.text.text--red.text--uppercase.text--center.text--fs-1_25vw В корзине:
+              form(action="action.php" method="post")
+                .user-block__table-basket-wrap.m--b30
+                  table.user-block__table-basket.m--b20
+                    tr.user-block__table-basket-row-top
+                      td.user-block__table-basket-row-top-td.user-block__table-basket-row-top-td--name
+                        h2.user-block__table-basket-title.text.text--white19.text--center Наименование
+                      td.user-block__table-basket-row-top-td
+                        h2.user-block__table-basket-title.text.text--white19.text--center Цена
+                      td.user-block__table-basket-row-top-td
+                        h2.user-block__table-basket-title.text.text--white19.text--center Количество
+                      td.user-block__table-basket-row-top-td
+                        h2.user-block__table-basket-title.text.text--white19.text--center Сумма
+                    - for (let i = 0; i < 3; i++)
+                      tr.user-block__table-basket-row-cart
+                        td.user-block__table-basket-name.row.row--ai-c
+                          .user-block__table-basket-img-wrap
+                            img.user-block__table-basket-img(src="%=static=%img/content/carts__good-img.jpg")
+                          h2.aside__filters-title-text.aside__filters-title-text--basket.text.text--black.text--fw700 Со свекольными листьями, с нежным сыром и зеленью с грибами
+                        td
+                          .row.row--jc-c
+                            p.user-block__table-basket-price 750
+                            span.user-block__table-basket-price-span.m--t-a руб.
+                        td
+                          span.row.row--jc-c.row--ai-c
+                            button.user-block__table-basket-cancel.button.m--r20(type="button")
+                            .user-block__table-basket-payment-controls.row
+                              button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--minus.button.grow(type="button")
+                              input.user-block__table-basket-payment-input.input.text--center.grow(type="text" value="1")
+                              button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--plus.button.grow(type="button")
+                        td.user-block__table-basket-sum
+                          .row.row--jc-c
+                            p.user-block__table-basket-price 3 750
+                            span.user-block__table-basket-price-span.m--t-a руб.
+                  .user-block__table-basket-total-price-wrap.row.row--jc-fe
+                    .user-block__table-basket-total-price.row.row--ai-c
+                      p.user-block__table-basket-total-price-text.text Итого к оплате:
+                      p.user-block__table-basket-total-price-sum.text 3 750 руб.
+                .user-block__table-basket-order-wrap
+                  .user-block__table-basket-order-content.row.row--jc-sb.row--ai-c
+                    .user-block__table-basket-order-content-form.grow
+                      h2.user-block__table-basket-order-content-headline.text.text--fw700.m--b15 Заполните контактные данные:
+                      ul.reviews.list
+                        li.row.m--b20.row--media570-column.m--media570-b0
+                          .reviews__submit-input-wrap.reviews__submit-input-wrap--basket-order.grow
+                            input.reviews__submit-input.input(type="text" placeholder="Ваше имя")
+                            span.reviews__submit-input-indicator-person.d-block
+                              != pugHelpers.Icon.call(locals, {iconName: 'person', className: 'person'})
+                          .reviews__submit-input-wrap.grow
+                            input.reviews__submit-input.input(type="tel" placeholder="Ваш телефон")
+                            span.reviews__submit-input-indicator-tel.d-block
+                              != pugHelpers.Icon.call(locals, {iconName: 'tel', className: 'tel'})
+                        li.row.m--b20.row--media570-column.m--media570-b0
+                          .user-block__basket-order-items-wrap.grow.m--r30
+                            h2.user-block__table-basket-order-content-headline.m--b15 Ближайшая станция метро:
+                            .user-block__basket-order-select
+                              .user-block__basket-order-select-input-wrap
+                                span.user-block__basket-order-select-input-icon.d-block
+                                  != pugHelpers.Icon.call(locals, {iconName: 'metro', className: 'metro'})
+                                input.user-block__basket-order-select-input.input(type="text" value="Цветной бульвар" readonly)
+                                span.user-block__basket-order-select-input-arrow.d-block
+                              .user-block__basket-order-select-content.hidden
+                                p.user-block__basket-order-select-content-text.text Цветной бульвар
+                                p.user-block__basket-order-select-content-text.text Панфиловская
+                                p.user-block__basket-order-select-content-text.text Марьина роща
+                                p.user-block__basket-order-select-content-text.text Маяковская
+
+                          .user-block__basket-order-items-wrap
+                            h2.user-block__table-basket-order-content-headline.m--b15 Адрес доставки:
+                            .reviews__submit-input-wrap.reviews__submit-input-wrap--basket
+                              input.reviews__submit-input.reviews__submit-input--address-basket.input(type="text")
+                        li.m--b20
+                          textarea.reviews__submit-textarea.input(placeholder="Комментарий к заказу")
+                        li.m--b20.row.row--ai-c.row--media1590-column
+                          p.user-block__basket-order-payment-method-headline.text Способы оплаты:
+                          ul.list.row.row--media570-column
+                            li.user-block__basket-order-payment-method-wrap
+                              input.user-block__basket-order-payment-method-input.input.input--radio(type="radio" name="groupMethod" checked)#groupMethod1
+                              label.user-block__basket-order-payment-method-text.d-block(for="groupMethod1") Наличными курьеру
+                                span.user-block__basket-order-payment-method-indicator.d-block
+                            li.user-block__basket-order-payment-method-wrap
+                              input.user-block__basket-order-payment-method-input.input.input--radio(type="radio" name="groupMethod")#groupMethod2
+                              label.user-block__basket-order-payment-method-text.d-block(for="groupMethod2") Банковская карта
+                                span.user-block__basket-order-payment-method-indicator.d-block
+                            li.user-block__basket-order-payment-method-wrap
+                              input.user-block__basket-order-payment-method-input.input.input--radio(type="radio" name="groupMethod")#groupMethod3
+                              label.user-block__basket-order-payment-method-text.d-block(for="groupMethod3") Сбербанк онлайн
+                                span.user-block__basket-order-payment-method-indicator.d-block 
+                        li.row.row--jc-sb.row--ai-c.row--media570-column
+                          .user-block__basket-order-sell-wrap
+                            input.aside__filters-description-input.input.input--checkbox(type="checkbox" name="checkboxSell" checked)#checkboxSell
+                            label.aside__filters-description-label.aside__filters-description-label--order-sell.d-block(for="checkboxSell") Скидка в день рождения -10%
+                              span.aside__filters-checkbox-indicator.d-block
+                          button.aside__filters-submit-button.aside__filters-submit-button--order-basket.button.button--fill-green.button--p-tb15.text.text--white.text--fw700.text--fs-1_05vw Подтвердить заказ
+                    .user-block__table-basket-order-content-img-wrap
+                      img.user-block__table-basket-order-content-img(src="%=static=%img/content/user-block-basket-order-img.jpg")
         
       footer.page-footer
         .footer-content
