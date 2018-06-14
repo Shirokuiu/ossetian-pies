@@ -2265,7 +2265,7 @@ img {
   width: 30px;
   height: 29px;
   background-position: -176px -135px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2274,7 +2274,7 @@ img {
   width: 30px;
   height: 30px;
   background-position: -252px -156px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2284,7 +2284,7 @@ img {
   width: 40px;
   height: 30px;
   background-position: -316px -219px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2293,7 +2293,7 @@ img {
   width: 30px;
   height: 28px;
   background-position: -360px -253px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2302,7 +2302,7 @@ img {
   width: 30px;
   height: 29px;
   background-position: -252px -190px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2311,7 +2311,7 @@ img {
   width: 30px;
   height: 30px;
   background-position: -360px -219px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2372,7 +2372,7 @@ img {
     width: 23px;
     height: 22px;
     background-position: -368px -159px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2380,7 +2380,7 @@ img {
     width: 23px;
     height: 23px;
     background-position: -368px -120px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2388,7 +2388,7 @@ img {
     width: 24px;
     height: 18px;
     background-position: -286px -190px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2396,7 +2396,7 @@ img {
     width: 23px;
     height: 21px;
     background-position: -286px -156px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2404,7 +2404,7 @@ img {
     width: 23px;
     height: 22px;
     background-position: -288px -120px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2412,7 +2412,7 @@ img {
     width: 23px;
     height: 23px;
     background-position: -368px -75px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -2518,7 +2518,7 @@ img {
   width: 32px;
   height: 32px;
   background-position: -252px -120px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2547,7 +2547,7 @@ img {
   width: 32px;
   height: 32px;
   background-position: -252px -120px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -2822,6 +2822,13 @@ img {
   font-weight: 700;
   color: #f1433d;
 }
+.user-block__table-basket-total-price-sum-span {
+  margin-left: 5px;
+  font-size: 43px;
+  line-height: 51px;
+  font-weight: 700;
+  color: #f1433d;
+}
 .user-block__table-basket-order-wrap {
   padding: 20px 0;
   background-color: #fff6d7;
@@ -3081,7 +3088,7 @@ img {
     width: 24px;
     height: 23px;
     background-position: -368px -30px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3103,7 +3110,7 @@ img {
     width: 24px;
     height: 23px;
     background-position: -368px -30px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3256,6 +3263,10 @@ img {
     font-size: 23px;
     line-height: 27px;
   }
+  .user-block__table-basket-total-price-sum-span {
+    font-size: 23px;
+    line-height: 27px;
+  }
   .user-block__table-basket-order-content {
     margin-left: 2%;
     margin-right: 2%;
@@ -3386,7 +3397,7 @@ img {
   width: 40px;
   height: 28px;
   background-position: -316px -253px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3557,7 +3568,7 @@ img {
   width: 80px;
   height: 87px;
   background-position: 0px 0px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3565,7 +3576,7 @@ img {
   width: 80px;
   height: 80px;
   background-position: -168px 0px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3573,7 +3584,7 @@ img {
   width: 80px;
   height: 84px;
   background-position: -84px 0px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3584,7 +3595,7 @@ img {
   width: 80px;
   height: 79px;
   background-position: 0px -91px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3620,7 +3631,7 @@ img {
   width: 50px;
   height: 53px;
   background-position: -252px -63px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -3707,7 +3718,7 @@ img {
     width: 60px;
     height: 65px;
     background-position: 0px -174px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3715,7 +3726,7 @@ img {
     width: 60px;
     height: 60px;
     background-position: -128px -174px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3723,7 +3734,7 @@ img {
     width: 60px;
     height: 63px;
     background-position: -64px -174px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3731,7 +3742,7 @@ img {
     width: 60px;
     height: 59px;
     background-position: -252px 0px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -3741,7 +3752,7 @@ img {
     width: 20px;
     height: 14px;
     background-position: -368px -57px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -4496,7 +4507,7 @@ img {
   width: 64px;
   height: 42px;
   background-position: -204px -243px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4504,7 +4515,7 @@ img {
   width: 64px;
   height: 46px;
   background-position: -136px -243px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4512,7 +4523,7 @@ img {
   width: 64px;
   height: 54px;
   background-position: -68px -243px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4520,7 +4531,7 @@ img {
   width: 64px;
   height: 54px;
   background-position: 0px -243px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4633,7 +4644,7 @@ img {
     width: 48px;
     height: 32px;
     background-position: -316px -159px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -4642,7 +4653,7 @@ img {
     width: 48px;
     height: 35px;
     background-position: -316px -120px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -4651,7 +4662,7 @@ img {
     width: 48px;
     height: 41px;
     background-position: -316px -75px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -4660,7 +4671,7 @@ img {
     width: 48px;
     height: 41px;
     background-position: -316px -30px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }
@@ -4807,7 +4818,7 @@ img {
   width: 80px;
   height: 26px;
   background-position: -316px 0px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4815,7 +4826,7 @@ img {
   width: 88px;
   height: 31px;
   background-position: -84px -135px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4853,7 +4864,7 @@ img {
   width: 142px;
   height: 40px;
   background-position: -84px -91px;
-  background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+  background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
   background-size: 396px 297px;
   background-repeat: no-repeat;
 }
@@ -4924,7 +4935,7 @@ img {
     width: 71px;
     height: 20px;
     background-position: -316px -195px;
-    background-image: url("../img/png-sprite/96dpi/spriteh2l2y.png");
+    background-image: url("../img/png-sprite/96dpi/spritevijde8.png");
     background-size: 396px 297px;
     background-repeat: no-repeat;
   }

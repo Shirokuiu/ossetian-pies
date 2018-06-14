@@ -229,31 +229,74 @@ html(class="no-js", lang="ru")
                         h2.user-block__table-basket-title.text.text--white19.text--center Количество
                       td.user-block__table-basket-row-top-td
                         h2.user-block__table-basket-title.text.text--white19.text--center Сумма
-                    - for (let i = 0; i < 3; i++)
-                      tr.user-block__table-basket-row-cart
-                        td.user-block__table-basket-name.row.row--ai-c
-                          .user-block__table-basket-img-wrap
-                            img.user-block__table-basket-img(src="%=static=%img/content/carts__good-img.jpg")
-                          h2.aside__filters-title-text.aside__filters-title-text--basket.text.text--black.text--fw700 Со свекольными листьями, с нежным сыром и зеленью с грибами
-                        td
-                          .row.row--jc-c
-                            p.user-block__table-basket-price 750
-                            span.user-block__table-basket-price-span.m--t-a руб.
-                        td
-                          span.row.row--jc-c.row--ai-c
-                            button.user-block__table-basket-cancel.button.m--r20(type="button")
-                            .user-block__table-basket-payment-controls.row
-                              button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--minus.button.grow(type="button")
-                              input.user-block__table-basket-payment-input.input.text--center.grow(type="text" value="1")
-                              button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--plus.button.grow(type="button")
-                        td.user-block__table-basket-sum
-                          .row.row--jc-c
-                            p.user-block__table-basket-price 3 750
-                            span.user-block__table-basket-price-span.m--t-a руб.
+
+                    tr.user-block__table-basket-row-cart#cart1
+                      td.user-block__table-basket-name.row.row--ai-c
+                        .user-block__table-basket-img-wrap
+                          img.user-block__table-basket-img(src="%=static=%img/content/carts__good-img.jpg")
+                        h2.aside__filters-title-text.aside__filters-title-text--basket.text.text--black.text--fw700 Со свекольными листьями, с нежным сыром и зеленью с грибами 
+                      td
+                        .row.row--jc-c
+                          p.user-block__table-basket-price 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
+                      td
+                        span.row.row--jc-c.row--ai-c
+                          button.user-block__table-basket-cancel.button.m--r20(type="button")
+                          .user-block__table-basket-payment-controls.row
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--minus.button.grow(type="button")
+                            input.user-block__table-basket-payment-input.input.text--center.grow(type="text" value="1")
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--plus.button.grow(type="button")
+                      td.user-block__table-basket-sum
+                        .row.row--jc-c
+                          p.user-block__table-basket-price.user-block__table-basket-price--sum 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
+                          
+                    tr.user-block__table-basket-row-cart#cart2
+                      td.user-block__table-basket-name.row.row--ai-c
+                        .user-block__table-basket-img-wrap
+                          img.user-block__table-basket-img(src="%=static=%img/content/carts__good-img.jpg")
+                        h2.aside__filters-title-text.aside__filters-title-text--basket.text.text--black.text--fw700 Со свекольными листьями, с нежным сыром и зеленью с грибами
+                      td
+                        .row.row--jc-c
+                          p.user-block__table-basket-price 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
+                      td
+                        span.row.row--jc-c.row--ai-c
+                          button.user-block__table-basket-cancel.button.m--r20(type="button")
+                          .user-block__table-basket-payment-controls.row
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--minus.button.grow(type="button")
+                            input.user-block__table-basket-payment-input.input.text--center.grow(type="text" value="1")
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--plus.button.grow(type="button")
+                      td.user-block__table-basket-sum
+                        .row.row--jc-c
+                          p.user-block__table-basket-price.user-block__table-basket-price--sum 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
+                          
+                    tr.user-block__table-basket-row-cart#cart3
+                      td.user-block__table-basket-name.row.row--ai-c
+                        .user-block__table-basket-img-wrap
+                          img.user-block__table-basket-img(src="%=static=%img/content/carts__good-img.jpg")
+                        h2.aside__filters-title-text.aside__filters-title-text--basket.text.text--black.text--fw700 Со свекольными листьями, с нежным сыром и зеленью с грибами
+                      td
+                        .row.row--jc-c
+                          p.user-block__table-basket-price 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
+                      td
+                        span.row.row--jc-c.row--ai-c
+                          button.user-block__table-basket-cancel.button.m--r20(type="button")
+                          .user-block__table-basket-payment-controls.row
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--minus.button.grow(type="button")
+                            input.user-block__table-basket-payment-input.input.text--center.grow(type="text" value="1")
+                            button.user-block__table-basket-payment-control.user-block__table-basket-payment-control--plus.button.grow(type="button")
+                      td.user-block__table-basket-sum
+                        .row.row--jc-c
+                          p.user-block__table-basket-price.user-block__table-basket-price--sum 750
+                          span.user-block__table-basket-price-span.m--t-a руб.
                   .user-block__table-basket-total-price-wrap.row.row--jc-fe
                     .user-block__table-basket-total-price.row.row--ai-c
                       p.user-block__table-basket-total-price-text.text Итого к оплате:
-                      p.user-block__table-basket-total-price-sum.text 3 750 руб.
+                      p.user-block__table-basket-total-price-sum.text 3 750
+                      span.user-block__table-basket-total-price-sum-span руб.
                 .user-block__table-basket-order-wrap
                   .user-block__table-basket-order-content.row.row--jc-sb.row--ai-c
                     .user-block__table-basket-order-content-form.grow

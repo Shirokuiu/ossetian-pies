@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true">
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainh2l2y.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainvijde8.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
@@ -117,7 +117,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="user-block user-block--header row"><a class="user-block__basket row row--jc-c row--ai-c b--w80 m--r15" href="#"><span class="user-block__basket-indicator d-block">0</span><span class="user-block__basket-icon"></span></a>
+                            <div class="user-block user-block--header row"><a class="user-block__basket row row--jc-c row--ai-c b--w80 m--r15" href="basket.html"><span class="user-block__basket-indicator d-block">0</span><span class="user-block__basket-icon"></span></a>
                                 <div class="b">
                                     <p class="user-block__work-time text text--white16 m--b10 p--l10">Время работы пекарни: с 9:00 до 21:00</p>
                                     <div class="row row--ai-c"><span class="user-block__phone-icon m--r15">
@@ -339,117 +339,16 @@
                             </div>
                         </aside>
                         <div class="content b--resize-w70 grow">
-                            <h2 class="aside__filters-headline text text--red text--uppercase text--center text--fs-1_25vw">В корзине:</h2>
-                            <form action="action.php" method="post">
-                                <div class="user-block__table-basket-wrap m--b30">
-                                    <table class="user-block__table-basket m--b20">
-                                        <tr class="user-block__table-basket-row-top">
-                                            <td class="user-block__table-basket-row-top-td user-block__table-basket-row-top-td--name">
-                                                <h2 class="user-block__table-basket-title text text--white19 text--center">Наименование</h2>
-                                            </td>
-                                            <td class="user-block__table-basket-row-top-td">
-                                                <h2 class="user-block__table-basket-title text text--white19 text--center">Цена</h2>
-                                            </td>
-                                            <td class="user-block__table-basket-row-top-td">
-                                                <h2 class="user-block__table-basket-title text text--white19 text--center">Количество</h2>
-                                            </td>
-                                            <td class="user-block__table-basket-row-top-td">
-                                                <h2 class="user-block__table-basket-title text text--white19 text--center">Сумма</h2>
-                                            </td>
-                                        </tr>
-                                        <tr class="user-block__table-basket-row-cart">
-                                            <td class="user-block__table-basket-name row row--ai-c">
-                                                <div class="user-block__table-basket-img-wrap">
-                                                    <img class="user-block__table-basket-img" src="static/img/content/carts__good-img.jpg">
-                                                </div>
-                                                <h2 class="aside__filters-title-text aside__filters-title-text--basket text text--black text--fw700">Со свекольными листьями, с нежным сыром и зеленью с грибами</h2>
-                                            </td>
-                                            <td>
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                            <td><span class="row row--jc-c row--ai-c">
-                          <button class="user-block__table-basket-cancel button m--r20" type="button"></button>
-                          <div class="user-block__table-basket-payment-controls row">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--minus button grow" type="button"></button>
-                            <input class="user-block__table-basket-payment-input input text--center grow" type="text" value="1">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--plus button grow" type="button"></button>
-                          </div></span>
-                                            </td>
-                                            <td class="user-block__table-basket-sum">
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">3 750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="user-block__table-basket-row-cart">
-                                            <td class="user-block__table-basket-name row row--ai-c">
-                                                <div class="user-block__table-basket-img-wrap">
-                                                    <img class="user-block__table-basket-img" src="static/img/content/carts__good-img.jpg">
-                                                </div>
-                                                <h2 class="aside__filters-title-text aside__filters-title-text--basket text text--black text--fw700">Со свекольными листьями, с нежным сыром и зеленью с грибами</h2>
-                                            </td>
-                                            <td>
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                            <td><span class="row row--jc-c row--ai-c">
-                          <button class="user-block__table-basket-cancel button m--r20" type="button"></button>
-                          <div class="user-block__table-basket-payment-controls row">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--minus button grow" type="button"></button>
-                            <input class="user-block__table-basket-payment-input input text--center grow" type="text" value="1">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--plus button grow" type="button"></button>
-                          </div></span>
-                                            </td>
-                                            <td class="user-block__table-basket-sum">
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">3 750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="user-block__table-basket-row-cart">
-                                            <td class="user-block__table-basket-name row row--ai-c">
-                                                <div class="user-block__table-basket-img-wrap">
-                                                    <img class="user-block__table-basket-img" src="static/img/content/carts__good-img.jpg">
-                                                </div>
-                                                <h2 class="aside__filters-title-text aside__filters-title-text--basket text text--black text--fw700">Со свекольными листьями, с нежным сыром и зеленью с грибами</h2>
-                                            </td>
-                                            <td>
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                            <td><span class="row row--jc-c row--ai-c">
-                          <button class="user-block__table-basket-cancel button m--r20" type="button"></button>
-                          <div class="user-block__table-basket-payment-controls row">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--minus button grow" type="button"></button>
-                            <input class="user-block__table-basket-payment-input input text--center grow" type="text" value="1">
-                            <button class="user-block__table-basket-payment-control user-block__table-basket-payment-control--plus button grow" type="button"></button>
-                          </div></span>
-                                            </td>
-                                            <td class="user-block__table-basket-sum">
-                                                <div class="row row--jc-c">
-                                                    <p class="user-block__table-basket-price">3 750</p><span class="user-block__table-basket-price-span m--t-a">руб.</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <div class="user-block__table-basket-total-price-wrap row row--jc-fe">
-                                        <div class="user-block__table-basket-total-price row row--ai-c">
-                                            <p class="user-block__table-basket-total-price-text text">Итого к оплате:</p>
-                                            <p class="user-block__table-basket-total-price-sum text">3 750 руб.</p>
+                            <div class="reviews">
+                                <div class="reviews__submit-wrap m--b20">
+                                    <div class="container row row--jc-c row--ai-c">
+                                        <div class="reviews__submit-img-wrap">
+                                            <img class="reviews__submit-img" src="static/img/content/reviews-submit-img.png">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="user-block__table-basket-order-wrap">
-                                    <div class="user-block__table-basket-order-content row row--jc-sb row--ai-c">
-                                        <div class="user-block__table-basket-order-content-form grow">
-                                            <h2 class="user-block__table-basket-order-content-headline text text--fw700 m--b15">Заполните контактные данные:</h2>
-                                            <ul class="reviews list">
-                                                <li class="row m--b20 row--media570-column m--media570-b0">
-                                                    <div class="reviews__submit-input-wrap reviews__submit-input-wrap--basket-order grow">
+                                        <form class="reviews__submit-form m--r-a" action="action.php" method="post">
+                                            <ul class="list">
+                                                <li class="row m--b20">
+                                                    <div class="reviews__submit-input-wrap grow">
                                                         <input class="reviews__submit-input input" type="text" placeholder="Ваше имя"><span class="reviews__submit-input-indicator-person d-block">
             <svg class="person" width="266.21px" height="350px">
                 <use xlink:href="#person"></use>
@@ -464,71 +363,292 @@
         </span>
                                                     </div>
                                                 </li>
-                                                <li class="row m--b20 row--media570-column m--media570-b0">
-                                                    <div class="user-block__basket-order-items-wrap grow m--r30">
-                                                        <h2 class="user-block__table-basket-order-content-headline m--b15">Ближайшая станция метро:</h2>
-                                                        <div class="user-block__basket-order-select">
-                                                            <div class="user-block__basket-order-select-input-wrap"><span class="user-block__basket-order-select-input-icon d-block">
-            <svg class="metro" width="408px" height="484.5px">
-                <use xlink:href="#metro"></use>
-            </svg>
-        </span>
-                                                                <input class="user-block__basket-order-select-input input" type="text" value="Цветной бульвар" readonly><span class="user-block__basket-order-select-input-arrow d-block"></span>
-                                                            </div>
-                                                            <div class="user-block__basket-order-select-content hidden">
-                                                                <p class="user-block__basket-order-select-content-text text">Цветной бульвар</p>
-                                                                <p class="user-block__basket-order-select-content-text text">Панфиловская</p>
-                                                                <p class="user-block__basket-order-select-content-text text">Марьина роща</p>
-                                                                <p class="user-block__basket-order-select-content-text text">Маяковская</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user-block__basket-order-items-wrap">
-                                                        <h2 class="user-block__table-basket-order-content-headline m--b15">Адрес доставки:</h2>
-                                                        <div class="reviews__submit-input-wrap reviews__submit-input-wrap--basket">
-                                                            <input class="reviews__submit-input reviews__submit-input--address-basket input" type="text">
-                                                        </div>
-                                                    </div>
-                                                </li>
                                                 <li class="m--b20">
-                                                    <textarea class="reviews__submit-textarea input" placeholder="Комментарий к заказу"></textarea>
+                                                    <textarea class="reviews__submit-textarea input" placeholder="Напишите ваш отзыв"></textarea>
                                                 </li>
-                                                <li class="m--b20 row row--ai-c row--media1590-column">
-                                                    <p class="user-block__basket-order-payment-method-headline text">Способы оплаты:</p>
-                                                    <ul class="list row row--media570-column">
-                                                        <li class="user-block__basket-order-payment-method-wrap">
-                                                            <input class="user-block__basket-order-payment-method-input input input--radio" type="radio" name="groupMethod" checked id="groupMethod1">
-                                                            <label class="user-block__basket-order-payment-method-text d-block" for="groupMethod1">Наличными курьеру<span class="user-block__basket-order-payment-method-indicator d-block"></span>
-                                                            </label>
-                                                        </li>
-                                                        <li class="user-block__basket-order-payment-method-wrap">
-                                                            <input class="user-block__basket-order-payment-method-input input input--radio" type="radio" name="groupMethod" id="groupMethod2">
-                                                            <label class="user-block__basket-order-payment-method-text d-block" for="groupMethod2">Банковская карта<span class="user-block__basket-order-payment-method-indicator d-block"></span>
-                                                            </label>
-                                                        </li>
-                                                        <li class="user-block__basket-order-payment-method-wrap">
-                                                            <input class="user-block__basket-order-payment-method-input input input--radio" type="radio" name="groupMethod" id="groupMethod3">
-                                                            <label class="user-block__basket-order-payment-method-text d-block" for="groupMethod3">Сбербанк онлайн<span class="user-block__basket-order-payment-method-indicator d-block"> </span>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="row row--jc-sb row--ai-c row--media570-column">
-                                                    <div class="user-block__basket-order-sell-wrap">
-                                                        <input class="aside__filters-description-input input input--checkbox" type="checkbox" name="checkboxSell" checked id="checkboxSell">
-                                                        <label class="aside__filters-description-label aside__filters-description-label--order-sell d-block" for="checkboxSell">Скидка в день рождения -10%<span class="aside__filters-checkbox-indicator d-block"></span>
-                                                        </label>
-                                                    </div>
-                                                    <button class="aside__filters-submit-button aside__filters-submit-button--order-basket button button--fill-green button--p-tb15 text text--white text--fw700 text--fs-1_05vw">Подтвердить заказ</button>
+                                                <li>
+                                                    <button class="aside__filters-submit-button button button--fill-yellow button--p-tb15 text text--black text--fw700 text--fs-1_05vw">Добавить отзыв</button>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div class="user-block__table-basket-order-content-img-wrap">
-                                            <img class="user-block__table-basket-order-content-img" src="static/img/content/user-block-basket-order-img.jpg">
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="reviews__content">
+                                    <h2 class="reviews__content-headline text text--center m--b20">Отзывы клиентов</h2>
+                                    <ul class="reviews__content-list list column column--ai-c">
+                                        <li class="reviews__review-container list--items-mb20">
+                                            <ul class="list column column--ai-fe">
+                                                <li class="aside__reviews-cart">
+                                                    <div class="row">
+                                                        <div class="aside__reviews-cart-avatar m--r15">
+                                                            <img class="aside__reviews-cart-avatar" src="static/img/content/avatar.png">
+                                                        </div>
+                                                        <div class="b grow">
+                                                            <h2 class="text text--black16 text--fw400 m--b5">Андрей</h2>
+                                                            <div class="row row--ai-c m--b10">
+                                                                <ul class="aside__reviews-cart-rate-list list row m--r10">
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="aside__reviews-cart-date-text text text--grayMediumLight16 m--r30">20 апреля</p>
+                                                                <div class="aside__reviews-cart-likes-wrap row row--ai-c"><span class="aside__reviews-cart-likes aside__reviews-cart-likes--dislike d-block m--r15">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span><span class="aside__reviews-cart-likes aside__reviews-cart-likes--like d-block">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="aside__reviews-cart-user-text text">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="reviews__review-container list--items-mb20">
+                                            <ul class="list column column--ai-fe">
+                                                <li class="aside__reviews-cart">
+                                                    <div class="row">
+                                                        <div class="aside__reviews-cart-avatar m--r15">
+                                                            <img class="aside__reviews-cart-avatar" src="static/img/content/avatar.png">
+                                                        </div>
+                                                        <div class="b grow">
+                                                            <h2 class="text text--black16 text--fw400 m--b5">Андрей</h2>
+                                                            <div class="row row--ai-c m--b10">
+                                                                <ul class="aside__reviews-cart-rate-list list row m--r10">
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="aside__reviews-cart-date-text text text--grayMediumLight16 m--r30">20 апреля</p>
+                                                                <div class="aside__reviews-cart-likes-wrap row row--ai-c"><span class="aside__reviews-cart-likes aside__reviews-cart-likes--dislike d-block m--r15">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span><span class="aside__reviews-cart-likes aside__reviews-cart-likes--like d-block">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="aside__reviews-cart-user-text text">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="reviews__review-container list--items-mb20">
+                                            <ul class="list column column--ai-fe">
+                                                <li class="aside__reviews-cart">
+                                                    <div class="row">
+                                                        <div class="aside__reviews-cart-avatar m--r15">
+                                                            <img class="aside__reviews-cart-avatar" src="static/img/content/avatar.png">
+                                                        </div>
+                                                        <div class="b grow">
+                                                            <h2 class="text text--black16 text--fw400 m--b5">Андрей</h2>
+                                                            <div class="row row--ai-c m--b10">
+                                                                <ul class="aside__reviews-cart-rate-list list row m--r10">
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="aside__reviews-cart-date-text text text--grayMediumLight16 m--r30">20 апреля</p>
+                                                                <div class="aside__reviews-cart-likes-wrap row row--ai-c"><span class="aside__reviews-cart-likes aside__reviews-cart-likes--dislike d-block m--r15">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span><span class="aside__reviews-cart-likes aside__reviews-cart-likes--like d-block">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="aside__reviews-cart-user-text text">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="reviews__review-container list--items-mb20">
+                                            <ul class="list column column--ai-fe">
+                                                <li class="aside__reviews-cart">
+                                                    <div class="row">
+                                                        <div class="aside__reviews-cart-avatar m--r15">
+                                                            <img class="aside__reviews-cart-avatar" src="static/img/content/avatar.png">
+                                                        </div>
+                                                        <div class="b grow">
+                                                            <h2 class="text text--black16 text--fw400 m--b5">Андрей</h2>
+                                                            <div class="row row--ai-c m--b10">
+                                                                <ul class="aside__reviews-cart-rate-list list row m--r10">
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="aside__reviews-cart-date-text text text--grayMediumLight16 m--r30">20 апреля</p>
+                                                                <div class="aside__reviews-cart-likes-wrap row row--ai-c"><span class="aside__reviews-cart-likes aside__reviews-cart-likes--dislike d-block m--r15">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span><span class="aside__reviews-cart-likes aside__reviews-cart-likes--like d-block">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="aside__reviews-cart-user-text text">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="reviews__review-container list--items-mb20">
+                                            <ul class="list column column--ai-fe">
+                                                <li class="aside__reviews-cart">
+                                                    <div class="row">
+                                                        <div class="aside__reviews-cart-avatar m--r15">
+                                                            <img class="aside__reviews-cart-avatar" src="static/img/content/avatar.png">
+                                                        </div>
+                                                        <div class="b grow">
+                                                            <h2 class="text text--black16 text--fw400 m--b5">Андрей</h2>
+                                                            <div class="row row--ai-c m--b10">
+                                                                <ul class="aside__reviews-cart-rate-list list row m--r10">
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                    <li class="aside__reviews-cart-rate-list-items">
+                                                                        <svg class="star" width="475.08px" height="453.1px">
+                                                                            <use xlink:href="#star"></use>
+                                                                        </svg>
+
+                                                                    </li>
+                                                                </ul>
+                                                                <p class="aside__reviews-cart-date-text text text--grayMediumLight16 m--r30">20 апреля</p>
+                                                                <div class="aside__reviews-cart-likes-wrap row row--ai-c"><span class="aside__reviews-cart-likes aside__reviews-cart-likes--dislike d-block m--r15">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span><span class="aside__reviews-cart-likes aside__reviews-cart-likes--like d-block">
+            <svg class="like" width="561px" height="510px">
+                <use xlink:href="#like"></use>
+            </svg>
+        </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="aside__reviews-cart-user-text text">Заказываем пироги в этом месте не первый раз!!! Все очень вкусно, быстро и качественно!!! заказывали с разными начинками, все пироги пальчики оближешь!!!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </main>
@@ -634,7 +754,7 @@
         </div>
 
 
-        <script src="static/js/mainh2l2y.min.js"></script>
+        <script src="static/js/mainvijde8.min.js"></script>
     </body>
 
 </html>
